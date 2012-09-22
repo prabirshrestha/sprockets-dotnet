@@ -38,16 +38,11 @@
         public List<Node<T>> ResolveDependencies()
         {
             var resolved = new List<Node<T>>();
-            ResolveDependencies(this, resolved);
+            ResolveDependencies(this, resolved, new List<Node<T>>());
             return resolved;
         }
 
-        private static void ResolveDependencies(Node<T> node, List<Node<T>> resolved)
-        {
-            ResolveDependenciesInternal(node, resolved, new List<Node<T>>());
-        }
-
-        private static void ResolveDependenciesInternal(Node<T> node, List<Node<T>> resolved, List<Node<T>> unresolved)
+        private static void ResolveDependencies(Node<T> node, List<Node<T>> resolved, List<Node<T>> unresolved)
         {
             // A software package can be installed when all of its dependencies have been installed, or when it doesn't have any dependencies at all.
             // When a package has already been resolved, we don't need to visit it again.
@@ -60,7 +55,7 @@
                 {
                     if (unresolved.Contains(edge))
                         throw new CircularDependencyException<T>(node, edge);
-                    ResolveDependenciesInternal(edge, resolved, unresolved);
+                    ResolveDependencies(edge, resolved, unresolved);
                 }
             }
 
