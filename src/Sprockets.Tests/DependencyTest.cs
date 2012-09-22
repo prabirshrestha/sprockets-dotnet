@@ -23,7 +23,7 @@
 
             var resolved = new List<Node<object>>();
 
-            Assert.DoesNotThrow(() => Node<object>.ResolveDependencies(a, resolved));
+            Assert.DoesNotThrow(() => a.ResolveDependencies());
         }
 
         [Fact]
@@ -48,7 +48,7 @@
             CircularDependencyException<object> exception = null;
             try
             {
-                Node<object>.ResolveDependencies(a, resolved);
+                a.ResolveDependencies();
             }
             catch (CircularDependencyException<object> ex)
             {

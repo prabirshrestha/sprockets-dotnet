@@ -1,1 +1,3 @@
-#= require b x
+##= require b x
+#= require b
+#= require x
