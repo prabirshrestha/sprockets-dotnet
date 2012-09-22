@@ -60,7 +60,34 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="assets\1.2.3.coffee" />
+    <None Include="assets\a.coffee" />
+    <None Include="assets\branch\center.coffee" />
+    <None Include="assets\branch\edge.coffee" />
+    <None Include="assets\branch\unwanted" />
+    <None Include="assets\middleEarth\legolas.coffee" />
+    <None Include="assets\middleEarth\shire\frodo.coffee" />
+    <None Include="assets\poly.coffee" />
+    <None Include="assets\song\horseAndCarriage.coffee" />
+    <None Include="assets\trilogy.coffee" />
+    <None Include="assets\x.coffee" />
+    <None Include="assets\yang.coffee" />
+    <None Include="assets\z.coffee" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\b.js" />
+    <Content Include="assets\branch\periphery.js" />
+    <Content Include="assets\branch\subbranch\leaf.js" />
+    <Content Include="assets\fellowship.js" />
+    <Content Include="assets\first\syblingFolder.js" />
+    <Content Include="assets\jquery-1.6.4.js" />
+    <Content Include="assets\middleEarth\shire\bilbo.js" />
+    <Content Include="assets\song\loveAndMarriage.js" />
+    <Content Include="assets\sybling\sybling.js" />
+    <Content Include="assets\testing.js" />
+    <Content Include="assets\y.js" />
+    <Content Include="assets\yin.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\nuget.targets" />
