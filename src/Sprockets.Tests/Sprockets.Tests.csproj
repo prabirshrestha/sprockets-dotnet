@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DependencyTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sprockets\Sprockets.csproj">
