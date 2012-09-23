@@ -3,6 +3,10 @@
 Sprockets.NET is a sprockets style dependency resolver for .NET inspired by inspired by [Sprockets](https://github.com/sstephenson/sprockets)
 and [Snockets](https://github.com/TrevorBurnham/snockets).
 
+## Install
+
+    Install-Package Sprockets
+
 ## Usage (script-side)
 
 In your CoffeeScript files, write Sprockets-style comments to indicate dependencies, e.g.
