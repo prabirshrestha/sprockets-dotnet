@@ -38,6 +38,44 @@ catch(CircularDependencyException<FileMetadata> ex)
 }
 ```
 
+## Using with System.Web.Optimization
+
+    Install-Package Sprockets.Web.Optimization
+
+
+Registering sprockets file using `IncludeFromSprocketFile`.
+
+    using System.Web.Optimization;
+    using Sprockets.Web.Optimization;
+
+    public class BundleConfig
+    {
+        public static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle("~/Scripts/jquery")
+                .Include("~/assets/javascripts/vendors/jquery-{version}.js"));
+
+            bundles.Add(new ScriptBundle("~/Scripts/app")
+                .IncludeFromSprocketFile("~/assets/javascripts/main.js"));
+        }
+    }
+
+Registering in global.asax
+
+    public class Global : System.Web.HttpApplication
+    {
+        protected void Application_Start(object sender, EventArgs e)
+        {
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
+        }
+    }
+
+In aspx page
+
+    <%@ Import Namespace="System.Web.Optimization" %>
+    <%= Scripts.Render("~/Scripts/jquery") %>
+    <%= Scripts.Render("~/Scripts/app") %>
+
 ## License
 
 ©2012 Prabir Shrestha and available under the [MIT license](http://www.opensource.org/licenses/mit-license.php):
