@@ -9,11 +9,23 @@ and [Snockets](https://github.com/TrevorBurnham/snockets).
 
 ## Usage (script-side)
 
-In your CoffeeScript files, write Sprockets-style comments to indicate dependencies, e.g.
+### Javascript
+
+Write Sprocket-style comments to indicated dependency, eg.
+
+    //= require dependency
+
+If you want to bring in a whole folder of scripts, use
+
+    //= require_tree dir
+
+### CoffeeScript
+
+Write Sprocket-style comments to indicated dependency, eg.
 
     #= require dependency
 
-(or `//= require dependency` in JavaScript). If you want to bring in a whole folder of scripts, use
+If you want to bring in a whole folder of scripts, use
 
     #= require_tree dir
 
@@ -73,6 +85,7 @@ Registering in global.asax
 In aspx page
 
     <%@ Import Namespace="System.Web.Optimization" %>
+
     <%= Scripts.Render("~/Scripts/jquery") %>
     <%= Scripts.Render("~/Scripts/app") %>
 
