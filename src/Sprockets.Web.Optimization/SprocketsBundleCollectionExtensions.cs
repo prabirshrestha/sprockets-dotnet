@@ -10,16 +10,21 @@
     {
         public static Bundle IncludeFromSprocketFile(this Bundle bundle, string relativePath)
         {
-            return bundle.IncludeFromSprocketFile(HostingEnvironment.MapPath("~/"), relativePath);
+            return bundle.IncludeFromSprocketFile(relativePath, HostingEnvironment.MapPath("~/"));
         }
 
         public static Bundle IncludeFromSprocketFile(this Bundle bundle, string relativePath, string root)
         {
+            if (string.IsNullOrWhiteSpace(relativePath))
+                throw new ArgumentNullException("relativePath");
+
             if (string.IsNullOrWhiteSpace(root))
                 throw new ArgumentNullException("root");
 
-            if (relativePath.StartsWith("~/"))
-                relativePath = relativePath.Substring(2);
+            if (!relativePath.StartsWith("~/"))
+                throw new ArgumentException("relativePath must start with ~/", relativePath);
+
+            relativePath = relativePath.Substring(2);
 
             var sprockets = new Sprockets();
 
