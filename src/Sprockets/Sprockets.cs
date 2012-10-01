@@ -44,7 +44,7 @@
 
             foreach (Match itemMatch in SprocketsRegex.Matches(contents))
             {
-                var dependencyPath = itemMatch.Groups["path"].Value;
+                var dependencyPath = itemMatch.Groups["path"].Value.Replace("\r", "");
                 if (dependencyPath.EndsWith("'"))
                     dependencyPath = dependencyPath.TrimEnd('\'');
 
