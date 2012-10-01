@@ -15,6 +15,9 @@
 <body>
     <form id="HtmlForm" runat="server">
     </form>
+    
+    <p>View > File Source to check the generated output</p>
+    <p>Try setting debug=false in web.config to see the minified version</p>
 
     <%= Scripts.Render("~/Scripts/jquery") %>
     <%= Scripts.Render("~/Scripts/app") %>
