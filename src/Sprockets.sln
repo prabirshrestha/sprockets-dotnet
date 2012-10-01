@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sprockets.Web.Optimization"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{599BB025-7754-42F5-8F56-15C76C0823FD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{87D9C7AC-31B5-4EE8-8075-F514297F0176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprocketsWebOptimizationAspNetDemo", "Samples\SprocketsWebOptimizationAspNetDemo\SprocketsWebOptimizationAspNetDemo.csproj", "{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +31,16 @@ Global
 		{74D23E03-C8E3-4955-BBE7-576FA5E0F335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D23E03-C8E3-4955-BBE7-576FA5E0F335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D23E03-C8E3-4955-BBE7-576FA5E0F335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A60098BD-7946-4600-8D3C-71FA7BDC8129} = {599BB025-7754-42F5-8F56-15C76C0823FD}
+		{AC09040A-BB8F-41DD-B160-2F2376AEFEDA} = {87D9C7AC-31B5-4EE8-8075-F514297F0176}
 	EndGlobalSection
 EndGlobal
