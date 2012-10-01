@@ -2,17 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Sprockets.Web.Optimization</id>
-        <version>0.1.0.0</version>
+        <version>0.2.0</version>
         <title>Sprockets.Web.Optimization</title>
         <authors>Prabir Shrestha</authors>
         <owners>Prabir Shrestha</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Sprockets style dependency resolver for .NET</description>
+        <description>Sprockets style dependency resolver for .NET and System.Web.Optimization</description>
         <copyright>Copyright © Prabir Shrestha 2012</copyright>
         <projectUrl>https://github.com/prabirshrestha/sprockets-dotnet</projectUrl>
         <licenseUrl>https://github.com/prabirshrestha/sprockets-dotnet#license</licenseUrl>
+        <tags>sprockets optimization bundling minification</tags>
         <dependencies>
-            <dependency id="Sprockets" version="0.1.0" />
+           <dependency id="Sprockets" version="0.2.0" />
             <dependency id="Microsoft.AspNet.Web.Optimization" version="1.0.0" />
         </dependencies>
     </metadata>

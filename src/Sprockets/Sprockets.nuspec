@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
         <id>Sprockets</id>
-        <version>0.1.0.0</version>
+        <version>0.2.0</version>
         <title>Sprockets</title>
         <authors>Prabir Shrestha</authors>
         <owners>Prabir Shrestha</owners>
@@ -11,5 +11,6 @@
         <copyright>Copyright © Prabir Shrestha 2012</copyright>
         <projectUrl>https://github.com/prabirshrestha/sprockets-dotnet</projectUrl>
         <licenseUrl>https://github.com/prabirshrestha/sprockets-dotnet#license</licenseUrl>
+        <tags>sprockets optimization bundling minification</tags>
     </metadata>
 </package>
