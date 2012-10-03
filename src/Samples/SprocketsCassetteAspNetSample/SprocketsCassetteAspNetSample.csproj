@@ -82,6 +82,9 @@
     <Content Include="assets\javascripts\vendors\jquery-1.8.2.js" />
     <Content Include="assets\javascripts\vendors\underscore.js" />
     <Content Include="assets\javascripts\views\index.js" />
+    <Content Include="assets\templates\main.js" />
+    <Content Include="assets\templates\todo.html" />
+    <Content Include="assets\templates\todoitem.html" />
     <Content Include="Default.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

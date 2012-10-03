@@ -4,6 +4,7 @@ namespace SprocketsCassetteAspNetSample
     using System.Linq;
     using System.Web.Hosting;
     using Cassette;
+    using Cassette.HtmlTemplates;
     using Cassette.Scripts;
     using Sprockets;
 
@@ -15,12 +16,15 @@ namespace SprocketsCassetteAspNetSample
         public void Configure(BundleCollection bundles)
         {
             bundles.Add<ScriptBundle>("assets/javascripts/vendors/jquery-1.8.2.js", b => b.PageLocation = "jquery");
-
             var sprockets = new Sprockets();
+
             var node = sprockets.Scan(HostingEnvironment.MapPath("~/assets/javascripts/main.js"));
             var deps = node.ResolveDependencies();
+            bundles.Add<ScriptBundle>("assets/javascripts/main.js", deps.Select(d => d.Data.AbsolutePath), b => b.PageLocation = "app");
 
-            bundles.Add<ScriptBundle>("assets/javascripts/main.js", deps.Select(d => d.Data.AbsolutePath).ToArray(), b => b.PageLocation = "app");
+            node = sprockets.Scan(HostingEnvironment.MapPath("~/assets/templates/main.js"));
+            deps = node.ResolveDependencies();
+            bundles.Add<HtmlTemplateBundle>("assets/templates", deps.Select(d => d.Data.AbsolutePath));
         }
     }
 }

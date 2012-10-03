@@ -3,6 +3,7 @@
 <%
     Bundles.Reference("assets/javascripts/vendors/jquery-1.8.2.js");
     Bundles.Reference("assets/javascripts/main.js");
+    Bundles.Reference("assets/templates");
      %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -23,6 +24,7 @@
     <p>Try setting debug=false in web.config to see the minified version</p>
 
     <%= Bundles.RenderScripts("jquery") %>
+    <%= Bundles.RenderHtmlTemplates() %>
     <%= Bundles.RenderScripts("app") %>
 </body>
 </html>
