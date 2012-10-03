@@ -13,7 +13,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{87D9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprocketsWebOptimizationAspNetDemo", "Samples\SprocketsWebOptimizationAspNetDemo\SprocketsWebOptimizationAspNetDemo.csproj", "{AC09040A-BB8F-41DD-B160-2F2376AEFEDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprocketsCassetteAspNetSample", "SprocketsCassetteAspNetSample\SprocketsCassetteAspNetSample.csproj", "{5328EB53-B27B-4066-A87D-3597E893D479}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SprocketsCassetteAspNetSample", "Samples\SprocketsCassetteAspNetSample\SprocketsCassetteAspNetSample.csproj", "{5328EB53-B27B-4066-A87D-3597E893D479}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

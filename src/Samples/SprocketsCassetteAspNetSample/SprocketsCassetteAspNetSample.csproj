@@ -99,7 +99,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Sprockets\Sprockets.csproj">
+    <ProjectReference Include="..\..\Sprockets\Sprockets.csproj">
       <Project>{f21dd1cd-82d8-4fdb-a5d2-dd322f2dadc6}</Project>
       <Name>Sprockets</Name>
     </ProjectReference>
