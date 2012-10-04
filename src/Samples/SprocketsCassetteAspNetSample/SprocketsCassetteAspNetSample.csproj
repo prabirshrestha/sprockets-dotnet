@@ -44,16 +44,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="AjaxMin">
-      <HintPath>..\packages\AjaxMin.4.67.4639.17289\lib\net40\AjaxMin.dll</HintPath>
+      <HintPath>..\..\packages\AjaxMin.4.67.4639.17289\lib\net40\AjaxMin.dll</HintPath>
     </Reference>
     <Reference Include="Cassette">
-      <HintPath>..\packages\Cassette.2.1.0-alpha2\lib\net40-client\Cassette.dll</HintPath>
+      <HintPath>..\..\packages\Cassette.2.1.0-alpha2\lib\net40-client\Cassette.dll</HintPath>
     </Reference>
     <Reference Include="Cassette.Aspnet">
-      <HintPath>..\packages\Cassette.Aspnet.2.1.0-alpha2\lib\net40\Cassette.Aspnet.dll</HintPath>
+      <HintPath>..\..\packages\Cassette.Aspnet.2.1.0-alpha2\lib\net40\Cassette.Aspnet.dll</HintPath>
     </Reference>
     <Reference Include="Cassette.Views">
-      <HintPath>..\packages\Cassette.Views.2.1.0-alpha2\lib\net40\Cassette.Views.dll</HintPath>
+      <HintPath>..\..\packages\Cassette.Views.2.1.0-alpha2\lib\net40\Cassette.Views.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.DataSetExtensions" />
