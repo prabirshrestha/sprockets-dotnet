@@ -51,7 +51,10 @@
                 switch (itemMatch.Groups["type"].Value)
                 {
                     case "require_tree":
-                        var files = GetFiles(CombinePath(GetDirectoryName(file), dependencyPath));
+                        var dir = CombinePath(GetDirectoryName(file), dependencyPath);
+                        if (!DirectoryExists(dir))
+                            break;
+                        var files = GetFiles(dir);
                         if (dependencyPath == ".")
                             files = files.Where(f => f != file).ToArray();
                         foreach (var f in files)
