@@ -66,7 +66,7 @@
                         throw new NotImplementedException();
                         break;
                     case "require":
-                        var dependencyAbsolutePath = GetAbsolutePath(file, dependencyPath);
+                        var dependencyAbsolutePath = GetAbsolutePath(file, dependencyPath.Replace("\r", string.Empty));
                         var depNode = GetNode(dependencyAbsolutePath, resolved);
 
                         depNode.Data.Type = "require";
@@ -128,9 +128,7 @@
             var ext = GetExtension(root);
             var dir = GetDirectoryName(root);
 
-            file = file.Replace("\r", string.Empty);
-
-            var path = CombinePath(dir, file);
+            var path = NormalizePath(CombinePath(dir, file));
             if (!FileExists(path))
             {
                 if (!string.IsNullOrEmpty(ext))
