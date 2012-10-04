@@ -61,6 +61,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="Sprockets.Web.Optimization.nuspec" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Sprockets\Sprockets.csproj">
